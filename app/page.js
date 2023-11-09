@@ -20,7 +20,8 @@ function Home() {
 email:'',
 subject:'',
 userName:'',
-submissionType:''
+submissionType:'',
+comittee:"Senate Legal and Constitutional Affairs Committee"
   })
       const [backendURLBase] = useState(`${process.env.NEXT_PUBLIC_URL}`)
       const [backendURLBaseServices] = useState(`${process.env.NEXT_PUBLIC_URL_SERVICES}`)
@@ -37,7 +38,7 @@ submissionType:''
       })
     const [mp, setMp] = useState([])
     const [senator, setSenator] = useState([])
-    const [states, setStates] = useState([])
+    const [states,setStates] = useState(["NSW","QLD", "VIC", "WA", "SA", "TAS", "NT", "ACT"])
     const [tweet, setTweet] = useState('')
     const [leads, setLeads] = useState()
     const [dataQuestions,setDataQuestions] = useState()
@@ -67,9 +68,9 @@ submissionType:''
           await Promise.all([
             fetchAllLeads('GET', backendURLBase, endpoints.toGetAllLeads, clientId, setLeads),
             fetchMainContent('GET', backendURLBase, endpoints.toGetMainData, clientId, '', setMainData),
-            fetchStatesData('GET', backendURLBase, endpoints.toGetAllRepresentatives, clientId, "", setStates),
+            //fetchStatesData('GET', backendURLBase, endpoints.toGetAllRepresentatives, clientId, "", setStates),
             fetchRepresentatives('GET', backendURLBase, endpoints.toGetAllRepresentatives, clientId, setDataUser,dataUser,setStates),
-            fetchTweet('GET', backendURLBase, endpoints.toGetTweets, clientId, '', setTweet),
+            //fetchTweet('GET', backendURLBase, endpoints.toGetTweets, clientId, '', setTweet),
             fetchQuestions('GET', backendURLBase, endpoints.toGetQuestions, clientId, '', setDataQuestions,setSenator),
             fetchTYM('GET', backendURLBase, endpoints.toGetThankYouMessage, clientId, '', setTypData)
           ]).then(() => {

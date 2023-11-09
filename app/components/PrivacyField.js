@@ -20,13 +20,13 @@ return (
         required
       >
         <option value={""}></option>
-        <option value={"public"}>
+        <option value={"Public"}>
         Public: Your submission will be published online with your name
         </option>
         <option value={"Name Withheld"}>
         Name withheld:  Your submission will be published online without your name
         </option>
-        <option value={"confidential"}>
+        <option value={"Confidential"}>
         Confidential:  Your submission will not be published online.
         </option>
       </Form.Control>

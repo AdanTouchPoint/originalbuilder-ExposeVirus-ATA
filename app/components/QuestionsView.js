@@ -106,8 +106,7 @@ const QuestionsView = ({
             <p style={{fontSize: "13px"}}>
               Committee Secretary
               <br />
-              [Nombre del committee] <br />
-              Parliament House, <br />
+              {dataUser.comittee} <br />
               PO Box 6100 <br />
               Parliament House <br />
               CANBERRA ACT 2006 <br />
