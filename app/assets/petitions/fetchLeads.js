@@ -21,7 +21,7 @@ const fetchLeads = (
       dataUser.email
     }&emailMessage=${message}&subject=${
       dataUser.subject
-    }&party=${dataUser.party}&sended=${successResponse}`
+    }&party=${dataUser.party}&city=${dataUser.state}&sended=${successResponse}`
   );
 };
 const fetchAllLeads = async (
