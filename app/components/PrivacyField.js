@@ -21,13 +21,13 @@ return (
       >
         <option value={""}></option>
         <option value={"Public"}>
-        Public: Your submission will be published online with your name
+        Public: Your name and submission will be published online.
         </option>
         <option value={"Name Withheld"}>
-        Name withheld:  Your submission will be published online without your name
+        Anonymous:  Your submission will be published online without your name.
         </option>
         <option value={"Confidential"}>
-        Confidential:  Your submission will not be published online.
+        Restricted:  Your submission will not be published or referred to the inquiry.
         </option>
       </Form.Control>
       <Form.Control.Feedback type="invalid">

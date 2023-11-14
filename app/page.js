@@ -21,7 +21,7 @@ email:'',
 subject:'',
 userName:'',
 submissionType:'',
-comittee:"Senate Legal and Constitutional Affairs Committee"
+comittee:"Commonwealth Government COVID-19 Response Inquiry"
   })
       const [backendURLBase] = useState(`${process.env.NEXT_PUBLIC_URL}`)
       const [backendURLBaseServices] = useState(`${process.env.NEXT_PUBLIC_URL_SERVICES}`)
