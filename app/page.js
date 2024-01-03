@@ -21,7 +21,7 @@ email:'',
 subject:'',
 userName:'',
 submissionType:'',
-comittee:"Commonwealth Government COVID-19 Response Inquiry"
+comittee:"Health and Environment Committee"
   })
       const [backendURLBase] = useState(`${process.env.NEXT_PUBLIC_URL}`)
       const [backendURLBaseServices] = useState(`${process.env.NEXT_PUBLIC_URL_SERVICES}`)

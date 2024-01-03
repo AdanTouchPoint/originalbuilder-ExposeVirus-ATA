@@ -107,12 +107,11 @@ const QuestionsView = ({
               Committee Secretary
               <br />
               {dataUser.comittee} <br />
-              PO Box 6100 <br />
               Parliament House <br />
-              CANBERRA ACT 2006 <br />
+              BRISBANE QLD 400 <br />
               AUSTRALIA <br />
               {today} <br />
-              {dataUser.submissionType} Submission by {dataUser.userName}
+              {dataUser.submissionType} Submission
             </p>
             <div style={{fontSize: "13px"}}>
               {questions ? elements(questions) : null}
