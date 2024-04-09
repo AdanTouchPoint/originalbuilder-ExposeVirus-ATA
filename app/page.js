@@ -21,7 +21,7 @@ email:'',
 subject:'',
 userName:'',
 submissionType:'',
-comittee:"Health and Environment Committee"
+comittee:"Health, Environment and Agriculture Committee"
   })
       const [backendURLBase] = useState(`${process.env.NEXT_PUBLIC_URL}`)
       const [backendURLBaseServices] = useState(`${process.env.NEXT_PUBLIC_URL_SERVICES}`)

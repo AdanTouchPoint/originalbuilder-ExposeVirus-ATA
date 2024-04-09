@@ -116,9 +116,9 @@ const QuestionsView = ({
               {questions ? elements(questions) : null}
               <br/>
             <p> Sincerely, {dataUser?.userName}<br/>
-            {dataUser?.emailUser}, {dataUser?.phone}
-            </p>
-            
+            {dataUser?.emailUser}, {dataUser?.phone}<br/>
+            {dataUser?.address}
+            </p>            
             </div>
           </Card>
         </div>
