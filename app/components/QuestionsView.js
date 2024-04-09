@@ -24,7 +24,6 @@ const QuestionsView = ({
   setLeads,
   leads,
 }) => {
-  console.log(dataUser)
   const elements = (questions) => {
     return Object.keys(questions).map((clave) =>
       questions[clave].split("<br/>").map((line, index) => (
@@ -106,16 +105,20 @@ const QuestionsView = ({
             <p style={{fontSize: "13px"}}>
               Committee Secretary
               <br />
-              {dataUser.comittee} <br />
-              Parliament House <br />
-              BRISBANE QLD 400 <br />
-              AUSTRALIA <br />
-              {today} <br />
-              {dataUser.submissionType} Submission
+              {dataUser.comittee} <br/>
+              Parliament House <br/>
+              BRISBANE QLD 400 <br/>
+              AUSTRALIA <br/>
+              {today} <br/>
+              {dataUser.submissionType} Submission by {dataUser?.userName}
             </p>
             <div style={{fontSize: "13px"}}>
               {questions ? elements(questions) : null}
-            <p>Best regards.</p>
+              <br/>
+            <p> Sincerely, {dataUser?.userName}<br/>
+            {dataUser?.emailUser}, {dataUser?.phone}
+            </p>
+            
             </div>
           </Card>
         </div>
